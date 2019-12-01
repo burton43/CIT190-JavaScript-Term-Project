@@ -1,0 +1,198 @@
+﻿body{
+	background:url('../media/ep_background.png') center no-repeat black;
+    background-size: cover;
+    font-family: 'Roboto Slab', serif;
+}
+article{
+	display:flex;
+	width:95%;
+	justify-content:space-between;
+	overflow:auto;
+	flex-wrap:wrap;
+	min-width:500px;
+
+}
+article > section{
+	flex:1;
+	background-color:black;
+	opacity:0.9;
+	padding:1%;
+	min-width:350px;
+	border:5px groove midnightblue;
+	border-radius:25px;
+	margin-right:1%;
+}
+header, footer{
+	width:75%;
+}
+audio, video{
+	margin-left:20px;
+}
+h1 {
+	text-align: center;
+	color: whitesmoke;
+	font-family:"Calisto MT", serif;
+	background-color:black;
+	opacity:0.9;
+	font-size:36pt;
+	text-shadow:1px 1px 1px black;
+}
+
+h2 {
+	font-family:"Calisto MT", serif;
+	color:whitesmoke;
+	text-shadow:2px 2px 5px black;
+	font-size:28pt;
+}
+h3 {
+	font-family:"Calisto MT", serif;
+	color:whitesmoke;
+	text-shadow:1px 1px 1px black;
+	font-size:20pt;
+}
+h4 {
+    text-align: center;
+	font-family:"Calisto MT", serif;
+	color:whitesmoke;
+	text-shadow:1px 1px 1px black;
+    font-size:10pt;
+    background-color:black;
+	opacity:0.9;
+}
+
+hr {
+	color:white;
+	height:6px;
+	opacity:0.3;
+}
+a{
+	margin-left:20px;
+}
+a:link{
+	color:whitesmoke;
+	font-family:"calisto mt", calibri, cambria, serif;
+	text-decoration:underline;
+}
+a:visited{
+	color:midnightblue;
+	text-decoration:underline;
+}
+a:active{
+	color:darkgoldenrod;
+	text-decoration:none;
+}
+a:hover{
+	color:white;
+	background-color:midnightblue;
+	text-decoration:none;
+}
+.indent{
+	padding-left:20px;
+}
+p{
+	color: white;
+}
+button{ 
+    padding:10px; 
+    background:black; 
+    color:white; 
+} 
+button:hover{ 
+    background:darkred;
+} 
+.icon-bar {
+    width: 100%; /* Full-width */
+    
+    overflow: visible; /* Overflow due to float */
+}
+
+.icon-bar a {
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 30%; /* Equal width (5 icons with 20% width each = 100%) */
+    
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 36px; /* Increased font size */
+    
+}
+
+.icon-bar a:hover {
+    background-color: #000; /* Add a hover color */
+}
+/* The following code was used from https://codepen.io/matchboxhero/pen/bomWGK?editors=1100 */
+circle {
+	fill: none;
+	stroke-width: 3.5;
+	animation-name: preloader;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	transform-origin: 170px 170px;
+    will-change: transform;
+}
+
+	circle:nth-of-type(1) {
+        stroke-dasharray: 550px;
+        animation-delay: -1s;
+	}
+
+	circle:nth-of-type(2) {
+        stroke-dasharray: 500px;
+        animation-delay: -2s;
+	}
+
+	circle:nth-of-type(3) {
+        stroke-dasharray: 450px;
+        animation-delay: -3s;
+	}
+
+	circle:nth-of-type(4) {
+        stroke-dasharray: 300px;
+        animation-delay: -4s;
+	}
+
+
+    
+
+@keyframes preloader {
+	50% {
+		transform: rotate(360deg);
+	}
+}
+/* End of borrowed code */
+
+nav2 a {
+	background-position-x: center;
+    text-decoration:none;
+}
+nav2 ul{
+
+    list-style:none;
+	display:inline-table;
+	padding-left: 30px;
+	
+}
+nav2 ul li{
+	background-position-x: center;
+    border-bottom:2px solid whitesmoke;
+    border-right:2px solid whitesmoke;
+    display:inline;
+}
+nav2 ul li a:link, nav2 ul li a:visited {
+    font-size:30pt;
+    margin:inherit;
+    font-weight:bold;
+    padding:50px;
+    background-color:midnightblue;
+    color:whitesmoke;
+}
+nav2 ul li a:hover, nav2 ul li a:active{
+    font-size:30pt;
+    font-weight:bold;
+    padding:50px;
+    background-color: whitesmoke;
+    color:midnightblue;
+}
+ 
+
